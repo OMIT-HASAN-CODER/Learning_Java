@@ -20,5 +20,25 @@ public class EqualityExercise {
         if (isALessThanB) {
             System.out.println(a + " is less than " + b);
         }
+
+        boolean isAEqualToB = a == b;
+        if (isAEqualToB) {
+            System.out.println(a + " is equal to " + b);
+        }
+
+        boolean isANotEqualToB = a != b;
+        if (isANotEqualToB) {
+            System.out.println(a + " is not equal to " + b);
+        }
+
+        boolean isAGreaterThanOrEqualToB = a >= b;
+        if (isAGreaterThanOrEqualToB) {
+            System.out.println(a + " is greater than or equal to " + b);
+        }
+
+        boolean isALessThanOrEqualToB = a <= b;
+        if (isALessThanOrEqualToB) {
+            System.out.println(a + " is less than or equal to " + b);
+        }
     }
 }
