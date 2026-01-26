@@ -7,5 +7,10 @@ public class LoopDemo {
             System.out.println("I love Java Programming.");
             counter ++;
         }
+        System.out.println();
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println("I love Java Programming.");
+        }
     }
 }
