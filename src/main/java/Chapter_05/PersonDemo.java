@@ -5,6 +5,14 @@ class Person {
     private String email;
     private int age;
 
+    public Person(String name) {
+        this.name = name;
+    }
+    public Person(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
     public Person(String name, String email, int age) {
         this.name = name;
         this.email = email;
@@ -20,7 +28,11 @@ class Person {
 
 public class PersonDemo {
     public static void main(String[] args) {
-        Person person = new Person("Omit", "omit@techomit.com", 21);
-        person.printInfo();
+        Person omit = new Person("Omit", "omit@techomit.com", 21);
+        omit.printInfo();
+        Person hasan = new Person("Hasan");
+        hasan.printInfo();
+        Person omitHasan = new Person("Omit Hasan", "omithasan@techomit.com");
+        omitHasan.printInfo();
     }
 }
