@@ -1,7 +1,5 @@
 package Chapter_05;
 
-import java.security.PublicKey;
-
 public class EnumExample {
     public enum Day {
         SATURDAY, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
