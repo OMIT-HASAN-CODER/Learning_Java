@@ -1,10 +1,18 @@
 package Chapter_05;
 
-public class EnumExample {
-    public enum Day {
-        SATURDAY, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
-    }
+enum Day {
+    SATURDAY, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
+}
 
+enum Month {
+    JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
+}
+
+enum Direction {
+    EAST, WEST, NORTH, SOUTH
+}
+
+class EnumExample {
     public void displayDay(Day day) {
         if (day == Day.SATURDAY) {
             System.out.println("It's Saturday! Weekend!");
@@ -13,10 +21,6 @@ public class EnumExample {
         } else {
             System.out.println("Weekday!");
         }
-    }
-
-    public enum Month {
-        JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
     }
 
     public void displayMoth(Month month) {
@@ -30,17 +34,15 @@ public class EnumExample {
         }
     }
 
-    public enum Direction {
-        EAST, WEST, NORTH, SOUTH
-    }
-
     public void displayAllDirection() {
         Direction[] values = Direction.values();
         for (Direction direction : values) {
             System.out.println(direction);
         }
     }
+}
 
+public class EnumExampleDemo {
     public static void main(String[] args) {
         EnumExample enumExample = new EnumExample();
 
